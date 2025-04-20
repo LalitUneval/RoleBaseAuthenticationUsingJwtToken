@@ -74,7 +74,7 @@ public class AuthController {
 
         return ResponseEntity.ok("Admin registered successfully");
     }
-    @PostMapping("/l    ogin")
+    @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody AuthRequest request) {
         authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(request.getUsername(), request.getPassword())
